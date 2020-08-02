@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-curl --data "Hostname: $(hostname), git:$(COMMIT_VERSION), serial:$(PISERIAL), "
+curl --data "echo Hostname: $(hostname), git:$(git clone https://github.com/alisgh/test.git), serial:$(dmesg | grep tty) " https://www.google.de/
