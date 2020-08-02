@@ -1,4 +1,2 @@
 #!/usr/bin/env bash
-
-echo "Hostname: $(hostname)"
-
+curl --data "Hostname: $(hostname), git:$(COMMIT_VERSION), serial:$(PISERIAL), "
